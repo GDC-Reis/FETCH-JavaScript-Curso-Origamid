@@ -1,0 +1,48 @@
+<!-- Utilizando a API https://viacep.com.br/ws/${CEP}/json/
+crie um formulário onde o usuário pode digitar o cep
+e o endereço completo é retornado ao clicar em buscar  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio CEP</title>
+</head>
+<style>
+    
+    label{
+        display: block;
+    }
+
+    input{
+        display: block;
+    }
+
+</style>
+
+<body>
+    <form id="buscaCep">´
+        <label for="cep">CEP</label>
+        <input type="text" name="cep" id="cep">
+        <input type="button" value="buscarCep" id="btnCep">
+    </form>
+
+    <div class="resultadoCep"></div>
+
+    <div>
+        <h2>Preço BTC</h2>
+        <p class="btc"></p>
+    </div>
+
+    <div>
+        <h3>Piadas</h3>
+        <p class="piadas"></p>
+        <button class="proximaPiada">Próxima Piada</button>
+    </div>
+    
+    <script src="exercicios.js"></script>
+
+</body>
+</html>
